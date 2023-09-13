@@ -1,0 +1,45 @@
+<ion-menu side="start" contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu Content</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-item class="menu-item" (click)="redirigiraLogin()">
+      <ion-icon name="log-out-outline" slot="start" class="icon-logout"></ion-icon>
+      <ion-label class="Texto-Logout">Salir</ion-label>
+    </ion-item>
+  </ion-content>
+</ion-menu>
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Recuperar Contraseña</ion-title> <!-- Agrega el título aquí -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large"></ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="ion-page" id="main-content">
+    <div class="ion-padding">
+      <p>Ingresa tu email de recuperación</p> 
+      <ion-list>
+        <ion-item>
+          <ion-input labelPlacement="floating" value="hi@ionic.io">
+            <div slot="label">Email <ion-text color="danger">(Required)</ion-text></div>
+          </ion-input>
+        </ion-item> <div class="ion-text-center">
+          <ion-button shape="round">Enviar Correo</ion-button>
+        </div>
+      </ion-list>
+    </div>
+  </div>
+</ion-content>  

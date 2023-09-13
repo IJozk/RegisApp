@@ -1,0 +1,44 @@
+<ion-header [translucent]="true"></ion-header>
+
+<ion-content [fullscreen]="true">
+  <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 70vh;">
+    <img src="assets/img/logo_duoc-06.jpg" alt="">
+    <div style="margin-top: 20px; display: flex; flex-direction: column; align-items: center;">
+      <ion-icon name="person-outline" style="font-size: 24px; margin-bottom: 10px;"></ion-icon>
+      <ion-list>
+        <ion-item>
+              <ion-input
+              type="email"
+              fill="solid"
+              label="Email"
+              labelPlacement="floating"
+              helperText="Enter a valid email"
+              errorText="Invalid email"
+              ngModel
+              email
+              ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input
+              type="password"
+              fill="solid"
+              label="Password"
+              labelPlacement="floating"
+              helperText="Ingresa tu contraseña"
+              errorText="El correo o contraseña no son validos."
+              ngModel
+              password
+              ></ion-input>
+        </ion-item>
+      </ion-list>
+      <div class="password-options">
+        <p routerLink="/recuperar" class="Texto-olvidar-contraseña">Olvidaste contraseña</p>
+        <div class="checkbox-container">
+          <ion-checkbox slot="start" class="checkbox-custom"></ion-checkbox>
+          <label class="checkbox-label">Recordar mis Datos</label>
+        </div>
+      </div>
+      <ion-button expand="full" class="Boton-login" routerLink="/menu">Iniciar sesión</ion-button>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,38 @@
+
+ion-content {
+    --ion-background-color: black; 
+}
+
+.Boton-login{
+    background-color: rgb(255, 255, 255); 
+    color: rgb(0, 0, 0); 
+    align-items: center;
+    justify-content: center;
+}   
+.password-options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos a la izquierda horizontalmente */
+    align-items: flex-start; /* Alinea los elementos a la izquierda horizontalmente */
+    margin-top: 16px;
+}
+
+.Texto-olvidar-contraseña {
+    text-decoration: underline; /* Agrega subrayado a "Olvidaste contraseña" */
+    cursor: pointer;
+    margin-right: 8px; /* Espacio entre "Olvidaste contraseña" y el checkbox */
+}
+
+.checkbox-custom {
+    --background: transparent; /* Fondo transparente para el checkbox */
+    --border: none; /* Sin borde */
+}
+
+.checkbox-label {
+    margin-left: 4px; /* Espacio entre el checkbox y el texto */
+}
+.checkbox-container {
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos a la izquierda horizontalmente */
+    margin-top: 8px;
+}

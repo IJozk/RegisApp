@@ -3,14 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
 
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
-
+import { NgChartsModule, NgChartsConfiguration } from 'ng2-charts'
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, NgChartsModule],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, {provide: NgChartsConfiguration, useValue: { generateColors: false }}],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
