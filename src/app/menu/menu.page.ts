@@ -22,7 +22,9 @@ export class MenuPage implements OnInit {
   redirigiraCuenta(){
     this.router.navigateByUrl('/cuenta');
   }
-
+  escanearQr(){
+    this.router.navigateByUrl('/qr-scanner');
+  }
   ngOnInit() {
   }
 
